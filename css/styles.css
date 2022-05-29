@@ -6,41 +6,43 @@
     --gris: #757575; 
     
 }
-
-
 html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
-
 *, *:before, *:after{
     box-sizing: inherit;
 }
-
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
 }
-.titulo{
-    text-align: center;
-    font-size: 3.8rem;
-    
 
+h1{
+    font-size: 3.8rem;
 }
-.titulo span{
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+tulo span{
     font-size: 2rem;
 }
-
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
 
 }
-
 .nav-bg{
     background-color: var(--secundario);
 }
-
 .navegacion-principal{
     display: flex;
     flex-direction: column;
@@ -64,16 +66,33 @@ body{
     font-weight: bold;
 
 }
-
 .navegacion-principal a:hover{
     background-color: var(--primario);
     color: var(--oscuro);
 }
-
 .hero{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 410px;
-    padding: 20px;
+    position: relative;
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+
+    /*La mejr forma de alinear vertical y horizontalmente*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+
+.contenido-hero p{
+    color: var(--blanco);
 }
